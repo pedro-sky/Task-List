@@ -6,15 +6,15 @@ function App() {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      text: "Estudar",
-      day: "10 de abril às 10:00",
-      reminder: true,
+      title: "Estudar",
+      description: "estudar e desenvolver o projeto",
+      isCompleted: false,
     },
     {
       id: 2,
-      text: "Fazer compras",
-      day: "10 de abril às 15:00",
-      reminder: true,
+      title: "Fazer compras",
+      description: "fazer as compras da semana",
+      isCompleted: false,
     },
   ]);
 
@@ -24,7 +24,7 @@ function App() {
         <h1 className="text-3xl text-slate-100 font-bold text-center">
           Gerenciador de tarefas
         </h1>
-        <Tasks />
+        <Tasks tasks={tasks} />
         <AddTask />
       </div>
     </div>

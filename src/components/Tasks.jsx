@@ -1,5 +1,11 @@
-function Tasks() {
-  return <h1>Tasks</h1>;
+function Tasks(props) {
+  return (
+    <ul>
+      {props.tasks.map((tasks) => (
+        <li>{tasks.title}</li>
+      ))}
+    </ul>
+  );
 }
 
 export default Tasks;
