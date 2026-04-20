@@ -84,7 +84,7 @@ The API response should follow this format:
 ## 📸 Screenshots
 
 <img width="572" height="449" alt="image" src="https://github.com/user-attachments/assets/0a8f9591-e978-47be-b48d-104639ee01b9" />
-       
+<br>
 <img width="532" height="186" alt="image" src="https://github.com/user-attachments/assets/f7cc018f-9c29-45ad-bcc2-41b291c1c768" />
 
 
