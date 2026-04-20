@@ -7,14 +7,14 @@ function AddTasks({ onAddTaskSubmit }) {
     <div className="space-y-4 p-6 bg-slate-200 rounded-md shadow flex flex-col">
       <input
         type="text"
-        placeholder="digitar tarefa"
+        placeholder="Task title"
         className="border-slate-300 outline-slate-400 px-4 py-2 rounded-md "
         value={title}
         onChange={(event) => setTitle(event.target.value)}
       ></input>
       <input
         type="text"
-        placeholder="digitar descrição"
+        placeholder="Task description"
         className="border-slate-300 outline-slate-400 px-4 py-2 rounded-md"
         value={description}
         onChange={(event) => setDescription(event.target.value)}
@@ -23,13 +23,13 @@ function AddTasks({ onAddTaskSubmit }) {
         className="bg-slate-500 text-white px-4 py-2 rounded-md font-medium"
         onClick={() => {
           if (!title.trim() || !description.trim()) {
-            return alert("Preencha o titulo de descrição da tarefa");
+            return alert("Please fill in all fields");
           }
 
           onAddTaskSubmit(title, description);
         }}
       >
-        Adicionar
+        Add Task
       </button>
     </div>
   );

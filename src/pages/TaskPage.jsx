@@ -20,7 +20,7 @@ function TaskPage() {
             <ChevronLeftIcon />
           </button>
           <h1 className="text-3xl text-slate-100 font-bold text-center">
-            detalhes da tarefa
+            Taks Details
           </h1>
         </div>
 
